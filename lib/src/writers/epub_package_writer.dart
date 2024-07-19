@@ -23,7 +23,7 @@ class EpubPackageWriter {
           builder, package.Metadata, package.Version);
       EpubManifestWriter.writeManifest(builder, package.Manifest);
       EpubSpineWriter.writeSpine(builder, package.Spine!);
-      EpubGuideWriter.writeGuide(builder, package.Guide);
+      // EpubGuideWriter.writeGuide(builder, package.Guide);
     });
 
     return builder.buildDocument().toXmlString(pretty: false);
